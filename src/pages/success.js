@@ -1,9 +1,9 @@
-import React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/SEO"
+import React from "react";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
-import { Link } from "gatsby"
-const Success = props => {
+import { Link } from "gatsby";
+const Success = (props) => {
   return (
     <Layout>
       <Seo title="Message Send" />
@@ -23,7 +23,7 @@ const Success = props => {
         </div>
       </section>
     </Layout>
-  )
-}
+  );
+};
 
-export default Success
+export default Success;

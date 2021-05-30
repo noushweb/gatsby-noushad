@@ -1,12 +1,12 @@
-import React from "react"
-import Layout from "../components/layout"
-import { StaticImage } from "gatsby-plugin-image"
-import Seo from "../components/SEO"
+import React from "react";
+import Layout from "../components/layout";
+import { StaticImage } from "gatsby-plugin-image";
+import Seo from "../components/seo";
 
-import BackgroundImage from "gatsby-background-image"
-import { graphql, Link } from "gatsby"
+import BackgroundImage from "gatsby-background-image";
+import { graphql, Link } from "gatsby";
 
-const Index = props => {
+const Index = (props) => {
   return (
     <Layout>
       <Seo title="Home " />
@@ -257,10 +257,10 @@ const Index = props => {
         </section>
       </BackgroundImage>
     </Layout>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
 
 export const pageQuery = graphql`
   query {
@@ -288,4 +288,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

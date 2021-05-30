@@ -1,9 +1,9 @@
-import React from "react"
-import Layout from "../components/layout"
-import Seo from "../components/SEO"
-import BackgroundImage from "gatsby-background-image"
-import { graphql, Link } from "gatsby"
-const NotFoundPage = props => {
+import React from "react";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import BackgroundImage from "gatsby-background-image";
+import { graphql, Link } from "gatsby";
+const NotFoundPage = (props) => {
   return (
     <Layout>
       <Seo title="404: Not found" />
@@ -23,8 +23,8 @@ const NotFoundPage = props => {
         </BackgroundImage>
       </section>
     </Layout>
-  )
-}
+  );
+};
 export const pageQuery = graphql`
   query {
     pagenotfound: file(relativePath: { eq: "pagenotfound.jpg" }) {
@@ -35,5 +35,5 @@ export const pageQuery = graphql`
       }
     }
   }
-`
-export default NotFoundPage
+`;
+export default NotFoundPage;
