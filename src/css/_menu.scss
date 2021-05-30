@@ -1,0 +1,128 @@
+/*#########*/
+/* Navbar */
+/*#########*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-center {
+  width: 90vw;
+  max-width: var(--max-width);
+}
+.nav-header {
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-header img {
+  width: 70%;
+}
+.nav-btn {
+  padding: 0.15rem 0.75rem;
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  img {
+    width: 34px;
+  }
+}
+.nav-btn svg {
+  font-size: 1.5rem;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  transition: var(--transition);
+}
+.show-links {
+  height: 26.938rem;
+  padding-bottom: 5rem;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--grey-1000);
+  letter-spacing: var(--letterSpacing);
+  padding: 1rem 0;
+  border-top: 1px solid var(--grey-500);
+  transition: var(--transition);
+  text-decoration: none;
+}
+.nav-link:hover {
+  color: $clr-primary;
+}
+.active-link {
+  color: $clr-primary;
+}
+.contact-link {
+  display: flex;
+  justify-content: center;
+}
+.contact-link a {
+  padding: 0.15rem 1rem;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    height: 6rem;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-header {
+    padding: 0;
+    margin-right: 2rem;
+    height: auto;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    height: auto !important;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-link {
+    padding: 0;
+    border-top: none;
+    margin-right: 3rem;
+    font-size: 1rem;
+  }
+  .nav-link a {
+    font-size: 1rem;
+  }
+  .contact-link {
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+header {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 5px 5px #8080802b;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+.mainlogo {
+  width: 70%;
+}
+.burgericon {
+  width: 30px;
+}
