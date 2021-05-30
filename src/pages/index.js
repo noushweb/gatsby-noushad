@@ -201,7 +201,7 @@ const Index = (props) => {
                   name="mohammednoushad"
                   method="POST"
                   action="/success"
-                  data-netlify-honeypot="bot-filed"
+                  netlify-honeypot="bot-field"
                   data-netlify="true"
                   className="formwrapper"
                 >
